@@ -1,0 +1,1467 @@
+{
+ "url": "http://127.0.0.1:8765",
+ "at": "2026-10-29T19:27:32.293Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.66,
+    0.63
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 1104,
+     "screens": 1.2,
+     "words": 219,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 21,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Fichas clínicas",
+     "words": 2,
+     "chars": 15,
+     "lines": 1,
+     "size": 24,
+     "vw": 1.7,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.25,
+     "top": 34,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Fichas clínicas",
+     "words": 2,
+     "lines": 1,
+     "size": 24,
+     "font": "Geist"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      24,
+      25
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 13,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.9
+     },
+     "measureChars": 164,
+     "max": {
+      "size": 25,
+      "vw": 1.7,
+      "font": "Geist",
+      "text": "8"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 11
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f2f4f7",
+     "bodyBgHsl": {
+      "h": 216,
+      "s": 0.24,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 369,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#555b63",
+       "share": 0.31
+      },
+      {
+       "color": "#111111",
+       "share": 0.26
+      },
+      {
+       "color": "#343a40",
+       "share": 0.15
+      },
+      {
+       "color": "#444950",
+       "share": 0.14
+      },
+      {
+       "color": "#41464d",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 4,
+     "radius": 6,
+     "height": 53,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bomberos · Central Unidad de salud",
+      "Fichas clínicas",
+      "MS María Salazar Personal médico",
+      "Nuevo registro"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "div.toolbar 1114px",
+      "div.table-footer 1114px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 8,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 900,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 1104,
+    "margins": {
+     "left": 286,
+     "right": 55
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Fichas clínicas",
+      "size": 24,
+      "top": 34,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 286,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 13,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 480,
+     "w": 300,
+     "h": 300
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#f2f4f7",
+    "sidebar": {
+     "w": 248,
+     "tag": "aside",
+     "links": 10,
+     "share": 0.17
+    },
+    "topbar": null,
+    "canvas": {
+     "left": 38,
+     "right": 39
+    },
+    "hero": {
+     "text": "Fichas clínicas",
+     "words": 2,
+     "chars": 15,
+     "lines": 1,
+     "size": 24,
+     "vw": 1.7,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.25,
+     "top": 34,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 2,
+     "radii": [
+      [
+       8,
+       2
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": {
+     "count": 8,
+     "median": 66
+    },
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.22,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      24
+     ]
+    },
+    "title": {
+     "text": "Fichas clínicas",
+     "size": 24,
+     "top": 34
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.73,
+    0.81
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 1834,
+     "screens": 1.8,
+     "words": 204,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 21,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Fichas clínicas",
+     "words": 2,
+     "chars": 15,
+     "lines": 1,
+     "size": 24,
+     "vw": 3.1,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.25,
+     "top": 84,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Fichas clínicas",
+     "words": 2,
+     "lines": 1,
+     "size": 24,
+     "font": "Geist"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      24,
+      25
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 13,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.9
+     },
+     "measureChars": 103,
+     "max": {
+      "size": 25,
+      "vw": 3.3,
+      "font": "Geist",
+      "text": "8"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.02,
+     "smallText": 13
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f2f4f7",
+     "bodyBgHsl": {
+      "h": 216,
+      "s": 0.24,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f2f4f7",
+       "top": 0,
+       "hsl": {
+        "h": 216,
+        "s": 0.24,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 419,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.28
+      },
+      {
+       "color": "#555b63",
+       "share": 0.27
+      },
+      {
+       "color": "#343a40",
+       "share": 0.16
+      },
+      {
+       "color": "#444950",
+       "share": 0.15
+      },
+      {
+       "color": "#41464d",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 5,
+     "radius": 6,
+     "height": 36,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bomberos · Central Unidad de salud",
+      "Fichas clínicas",
+      "MS María Salazar Personal médico",
+      "Nuevo registro",
+      "Filtrar"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "button.profile-button 728px",
+      "div.mobile-bar 768px",
+      "div.toolbar 718px",
+      "div.table-footer 718px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 8,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 1024,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 1834,
+    "margins": {
+     "left": 24,
+     "right": 37
+    },
+    "sections": [
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 481,
+      "height": 158,
+      "words": 13,
+      "media": 0,
+      "middle": 252,
+      "heading": null,
+      "left": 41,
+      "right": 268,
+      "textLeft": 41,
+      "textRight": 268,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 639,
+      "height": 158,
+      "words": 13,
+      "media": 0,
+      "middle": 255,
+      "heading": null,
+      "left": 41,
+      "right": 268,
+      "textLeft": 41,
+      "textRight": 268,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 797,
+      "height": 158,
+      "words": 12,
+      "media": 0,
+      "middle": 240,
+      "heading": null,
+      "left": 41,
+      "right": 307,
+      "textLeft": 41,
+      "textRight": 307,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 954,
+      "height": 158,
+      "words": 10,
+      "media": 0,
+      "middle": 275,
+      "heading": null,
+      "left": 41,
+      "right": 238,
+      "textLeft": 41,
+      "textRight": 238,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 1112,
+      "height": 158,
+      "words": 12,
+      "media": 0,
+      "middle": 262,
+      "heading": null,
+      "left": 41,
+      "right": 307,
+      "textLeft": 41,
+      "textRight": 307,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 1270,
+      "height": 158,
+      "words": 12,
+      "media": 0,
+      "middle": 265,
+      "heading": null,
+      "left": 41,
+      "right": 311,
+      "textLeft": 41,
+      "textRight": 311,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 1428,
+      "height": 158,
+      "words": 13,
+      "media": 0,
+      "middle": 252,
+      "heading": null,
+      "left": 41,
+      "right": 241,
+      "textLeft": 41,
+      "textRight": 241,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 1586,
+      "height": 158,
+      "words": 12,
+      "media": 0,
+      "middle": 255,
+      "heading": null,
+      "left": 41,
+      "right": 307,
+      "textLeft": 41,
+      "textRight": 307,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Fichas clínicas",
+      "size": 24,
+      "top": 84,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 13,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": false,
+    "ground": "#f2f4f7",
+    "sidebar": null,
+    "topbar": {
+     "h": 56
+    },
+    "canvas": {
+     "left": 24,
+     "right": 24
+    },
+    "hero": {
+     "text": "Fichas clínicas",
+     "words": 2,
+     "chars": 15,
+     "lines": 1,
+     "size": 24,
+     "vw": 3.1,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.25,
+     "top": 84,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 10,
+     "radii": [
+      [
+       0,
+       8
+      ],
+      [
+       8,
+       2
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": {
+     "count": 8,
+     "median": 158
+    },
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.35,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      24
+     ]
+    },
+    "title": {
+     "text": "Fichas clínicas",
+     "size": 24,
+     "top": 84
+    },
+    "colourShare": 0.001
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.78,
+    0.87,
+    0.81
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 1905,
+     "screens": 2.3,
+     "words": 201,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 21,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Fichas clínicas",
+     "words": 2,
+     "chars": 15,
+     "lines": 1,
+     "size": 21,
+     "vw": 5.4,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.25,
+     "top": 79,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Fichas clínicas",
+     "words": 2,
+     "lines": 1,
+     "size": 21,
+     "font": "Geist"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      20,
+      21
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 13,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.9
+     },
+     "measureChars": 48,
+     "max": {
+      "size": 21,
+      "vw": 5.4,
+      "font": "Geist",
+      "text": "Fichas clínicas"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 13
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f2f4f7",
+     "bodyBgHsl": {
+      "h": 216,
+      "s": 0.24,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f2f4f7",
+       "top": 0,
+       "hsl": {
+        "h": 216,
+        "s": 0.24,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 451,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.29
+      },
+      {
+       "color": "#555b63",
+       "share": 0.27
+      },
+      {
+       "color": "#343a40",
+       "share": 0.16
+      },
+      {
+       "color": "#444950",
+       "share": 0.15
+      },
+      {
+       "color": "#41464d",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 4,
+     "radius": 6,
+     "height": 53,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bomberos · Central Unidad de salud",
+      "Fichas clínicas",
+      "MS María Salazar Personal médico",
+      "Filtrar"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "button.profile-button 350px",
+      "div.mobile-bar 390px",
+      "div.toolbar 356px",
+      "div.table-footer 356px"
+     ],
+     "outlinedBoxes": 3,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 8,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 844,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 1905,
+    "margins": {
+     "left": 16,
+     "right": 29
+    },
+    "sections": [
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 513,
+      "height": 164,
+      "words": 13,
+      "media": 0,
+      "middle": 71,
+      "heading": null,
+      "left": 33,
+      "right": 79,
+      "textLeft": 33,
+      "textRight": 79,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 677,
+      "height": 164,
+      "words": 13,
+      "media": 0,
+      "middle": 74,
+      "heading": null,
+      "left": 33,
+      "right": 79,
+      "textLeft": 33,
+      "textRight": 79,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 840,
+      "height": 164,
+      "words": 12,
+      "media": 0,
+      "middle": 59,
+      "heading": null,
+      "left": 33,
+      "right": 112,
+      "textLeft": 33,
+      "textRight": 112,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 1004,
+      "height": 164,
+      "words": 10,
+      "media": 0,
+      "middle": 94,
+      "heading": null,
+      "left": 33,
+      "right": 49,
+      "textLeft": 33,
+      "textRight": 49,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 1167,
+      "height": 164,
+      "words": 12,
+      "media": 0,
+      "middle": 81,
+      "heading": null,
+      "left": 33,
+      "right": 112,
+      "textLeft": 33,
+      "textRight": 112,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 1331,
+      "height": 164,
+      "words": 12,
+      "media": 0,
+      "middle": 84,
+      "heading": null,
+      "left": 33,
+      "right": 116,
+      "textLeft": 33,
+      "textRight": 116,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 1495,
+      "height": 164,
+      "words": 13,
+      "media": 0,
+      "middle": 71,
+      "heading": null,
+      "left": 33,
+      "right": 52,
+      "textLeft": 33,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "tr",
+      "tag": "tr",
+      "top": 1658,
+      "height": 164,
+      "words": 12,
+      "media": 0,
+      "middle": 74,
+      "heading": null,
+      "left": 33,
+      "right": 112,
+      "textLeft": 33,
+      "textRight": 112,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Fichas clínicas",
+      "size": 21,
+      "top": 79,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 13,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#f2f4f7",
+    "sidebar": null,
+    "topbar": {
+     "h": 56
+    },
+    "canvas": {
+     "left": 16,
+     "right": 16
+    },
+    "hero": {
+     "text": "Fichas clínicas",
+     "words": 2,
+     "chars": 15,
+     "lines": 1,
+     "size": 21,
+     "vw": 5.4,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.25,
+     "top": 79,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 3,
+     "firstScreen": 3,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 11,
+     "radii": [
+      [
+       0,
+       8
+      ],
+      [
+       8,
+       3
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": {
+     "count": 8,
+     "median": 164
+    },
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.28,
+     "tiny": 1,
+     "tinySamples": [
+      "Nuevo registro 0px"
+     ],
+     "sizes": [
+      0,
+      12,
+      13,
+      14,
+      15,
+      21
+     ]
+    },
+    "title": {
+     "text": "Fichas clínicas",
+     "size": 21,
+     "top": 79
+    },
+    "colourShare": 0.001
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\inspect\\mobile-final\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\inspect\\mobile-final\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\inspect\\mobile-final\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\inspect\\mobile-final\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\inspect\\mobile-final\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\inspect\\mobile-final\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

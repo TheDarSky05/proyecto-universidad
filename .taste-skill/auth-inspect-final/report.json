@@ -1,0 +1,1338 @@
+{
+ "url": "http://127.0.0.1:8767/index.html",
+ "at": "2026-11-07T18:51:39.963Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 1,
+   "filled": [
+    0.65
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 900,
+     "screens": 1,
+     "words": 92,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 28,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Salud para bomberos",
+     "words": 3,
+     "chars": 19,
+     "lines": 1,
+     "size": 32,
+     "vw": 2.2,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.04,
+     "leading": 1.05,
+     "top": 416,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Salud para bomberos",
+     "words": 3,
+     "lines": 1,
+     "size": 32,
+     "font": "Geist"
+    },
+    "headings": [
+     {
+      "text": "Inicia sesión",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.28,
+      "top": 166,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Salud para bomberos",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 416,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      30,
+      32
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 12,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.7
+     },
+     "measureChars": 67,
+     "max": {
+      "size": 32,
+      "vw": 2.2,
+      "font": "Geist",
+      "text": "Salud para bomberos"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.11,
+     "smallText": 4
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#080808",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.03
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#080808",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.03
+       }
+      },
+      {
+       "color": "#0b0b0b",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#969696",
+       "share": 0.55
+      },
+      {
+       "color": "#b8b8b8",
+       "share": 0.27
+      },
+      {
+       "color": "#f5f5f5",
+       "share": 0.15
+      },
+      {
+       "color": "#ff5266",
+       "share": 0.02
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#d82e43",
+      "hsl": {
+       "h": 353,
+       "s": 0.69,
+       "l": 0.51
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 8,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Entrar"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 3,
+     "hairlineSamples": [
+      "section.auth-story 756px",
+      "div.auth-tabs 400px",
+      "p.auth-security-note 400px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.33
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 0,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 900,
+    "margins": {
+     "left": 8,
+     "right": 142
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Salud para bomberos",
+      "size": 32,
+      "top": 416,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 86,
+      "n": 1
+     },
+     {
+      "x": 898,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.08,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 840,
+     "h": 120
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": true,
+    "ground": "#080808",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 8,
+     "right": 142
+    },
+    "hero": {
+     "text": "Salud para bomberos",
+     "words": 3,
+     "chars": 19,
+     "lines": 1,
+     "size": 32,
+     "vw": 2.2,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.04,
+     "leading": 1.05,
+     "top": 416,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 1,
+    "layout": {
+     "panels": 1,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 1,
+     "radii": [
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 1,
+    "placeholders": [],
+    "type": {
+     "under13": 0.33,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      24,
+      30,
+      32
+     ]
+    },
+    "title": {
+     "text": "Salud para bomberos",
+     "size": 32,
+     "top": 416
+    },
+    "colourShare": 0.014
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 1,
+   "filled": [
+    0.48
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 1024,
+     "screens": 1,
+     "words": 92,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 28,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Salud para bomberos",
+     "words": 3,
+     "chars": 19,
+     "lines": 2,
+     "size": 31,
+     "vw": 4,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1.05,
+     "top": 454,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Salud para bomberos",
+     "words": 3,
+     "lines": 2,
+     "size": 30.7,
+     "font": "Geist"
+    },
+    "headings": [
+     {
+      "text": "Inicia sesión",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.49,
+      "top": 228,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Salud para bomberos",
+      "words": 3,
+      "chars": 19,
+      "lines": 2,
+      "size": 30.7,
+      "vw": 4,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 454,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      30,
+      31
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 12,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.7
+     },
+     "measureChars": 63,
+     "max": {
+      "size": 30.7,
+      "vw": 4,
+      "font": "Geist",
+      "text": "Salud para bomberos"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.11,
+     "smallText": 4
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#080808",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.03
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#080808",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.03
+       }
+      },
+      {
+       "color": "#0b0b0b",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#969696",
+       "share": 0.55
+      },
+      {
+       "color": "#b8b8b8",
+       "share": 0.27
+      },
+      {
+       "color": "#f5f5f5",
+       "share": 0.15
+      },
+      {
+       "color": "#ff5266",
+       "share": 0.02
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#d82e43",
+      "hsl": {
+       "h": 353,
+       "s": 0.69,
+       "l": 0.51
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 8,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Entrar"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 3,
+     "hairlineSamples": [
+      "section.auth-story 326px",
+      "div.auth-tabs 378px",
+      "p.auth-security-note 378px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.13
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 0,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 1024,
+    "margins": {
+     "left": 3,
+     "right": 32
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Salud para bomberos",
+      "size": 31,
+      "top": 454,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 1
+     },
+     {
+      "x": 358,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": true,
+    "ground": "#080808",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 3,
+     "right": 32
+    },
+    "hero": {
+     "text": "Salud para bomberos",
+     "words": 3,
+     "chars": 19,
+     "lines": 2,
+     "size": 31,
+     "vw": 4,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1.05,
+     "top": 454,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 1,
+    "layout": {
+     "panels": 1,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 1,
+     "radii": [
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 1,
+    "placeholders": [],
+    "type": {
+     "under13": 0.41,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      24,
+      30,
+      31
+     ]
+    },
+    "title": {
+     "text": "Salud para bomberos",
+     "size": 31,
+     "top": 454
+    },
+    "colourShare": 0.023
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.61,
+    0.52
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 850,
+     "screens": 1,
+     "words": 92,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 28,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Salud para bomberos",
+     "words": 3,
+     "chars": 19,
+     "lines": 1,
+     "size": 25,
+     "vw": 6.4,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.04,
+     "leading": 1.12,
+     "top": 22,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Salud para bomberos",
+     "words": 3,
+     "lines": 1,
+     "size": 25,
+     "font": "Geist"
+    },
+    "headings": [
+     {
+      "text": "Salud para bomberos",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 22,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Inicia sesión",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 257,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      25,
+      27
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 12,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.8
+     },
+     "measureChars": 58,
+     "max": {
+      "size": 27,
+      "vw": 6.9,
+      "font": "Geist",
+      "text": "Inicia sesión"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.11,
+     "smallText": 4
+    },
+    "eyebrows": [
+     {
+      "text": "Salud ocupacional",
+      "above": "Inicia sesión",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 215
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#080808",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.03
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#080808",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.03
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#969696",
+       "share": 0.55
+      },
+      {
+       "color": "#b8b8b8",
+       "share": 0.27
+      },
+      {
+       "color": "#f5f5f5",
+       "share": 0.15
+      },
+      {
+       "color": "#ff5266",
+       "share": 0.02
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#d82e43",
+      "hsl": {
+       "h": 353,
+       "s": 0.69,
+       "l": 0.51
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 8,
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Entrar"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 3,
+     "hairlineSamples": [
+      "section.auth-story 390px",
+      "div.auth-tabs 346px",
+      "p.auth-security-note 346px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.1
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 0,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 850,
+    "margins": {
+     "left": 22,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "section.auth-story",
+      "tag": "section",
+      "top": 0,
+      "height": 162,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Salud para bomberos",
+       "size": 25,
+       "tag": "h1"
+      },
+      "left": 22,
+      "right": 29,
+      "textLeft": 22,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.auth-panel",
+      "tag": "section",
+      "top": 162,
+      "height": 688,
+      "words": 73,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Inicia sesión",
+       "size": 27,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 22,
+      "textLeft": 22,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": true,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Salud para bomberos",
+      "size": 25,
+      "top": 22,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 22,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": true,
+    "ground": "#080808",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 22,
+     "right": -47
+    },
+    "hero": {
+     "text": "Salud para bomberos",
+     "words": 3,
+     "chars": 19,
+     "lines": 1,
+     "size": 25,
+     "vw": 6.4,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.04,
+     "leading": 1.12,
+     "top": 22,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 1,
+    "layout": {
+     "panels": 1,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 1,
+    "panels": {
+     "count": 1,
+     "radii": [
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 1,
+    "placeholders": [],
+    "type": {
+     "under13": 0.37,
+     "tiny": 1,
+     "tinySamples": [
+      "Nuevo registro 0px"
+     ],
+     "sizes": [
+      0,
+      11,
+      12,
+      13,
+      14,
+      15,
+      21,
+      25,
+      27
+     ]
+    },
+    "title": {
+     "text": "Salud para bomberos",
+     "size": 25,
+     "top": 22
+    },
+    "colourShare": 0.044
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\auth-inspect-final\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\auth-inspect-final\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\auth-inspect-final\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\auth-inspect-final\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\auth-inspect-final\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\TheDarkSky05\\Documents\\UPTOS PROYECTO\\.taste-skill\\auth-inspect-final\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

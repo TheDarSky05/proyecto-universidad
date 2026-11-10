@@ -49,6 +49,66 @@ function openDialog(content, title) {
   backdrop.querySelector("[data-close]").focus();
 }
 
+function setFieldError(field, message) {
+  if (!field) return;
+  const hasError = Boolean(message);
+  field.setAttribute("aria-invalid", String(hasError));
+  field.setCustomValidity(hasError ? message : "");
+}
+
+function getDateValue(value) {
+  if (!value) return null;
+  const date = new Date(`${value}T12:00:00Z`);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function validateRecordInput(form) {
+  const fields = {
+    name: form.querySelector("[name='name']"),
+    id: form.querySelector("[name='id']"),
+    station: form.querySelector("[name='station']"),
+    lastExam: form.querySelector("[name='lastExam']"),
+    nextExam: form.querySelector("[name='nextExam']")
+  };
+
+  const name = String(fields.name.value).trim();
+  if (name.length < 2) {
+    setFieldError(fields.name, "El nombre debe tener al menos 2 caracteres.");
+    return false;
+  }
+  setFieldError(fields.name, "");
+
+  const id = String(fields.id.value).trim();
+  if (!/^[A-Za-z]{1,4}-?\d{3,12}$/.test(id)) {
+    setFieldError(fields.id, "Usa un código con letras y números, por ejemplo B-1042.");
+    return false;
+  }
+  setFieldError(fields.id, "");
+
+  const station = String(fields.station.value).trim();
+  if (station.length < 3) {
+    setFieldError(fields.station, "La estación debe tener al menos 3 caracteres.");
+    return false;
+  }
+  setFieldError(fields.station, "");
+
+  const lastExam = getDateValue(fields.lastExam.value);
+  if (!lastExam) {
+    setFieldError(fields.lastExam, "Selecciona la fecha de la última evaluación.");
+    return false;
+  }
+  setFieldError(fields.lastExam, "");
+
+  const nextExam = getDateValue(fields.nextExam.value);
+  if (fields.nextExam.value && nextExam && nextExam < lastExam) {
+    setFieldError(fields.nextExam, "El próximo control no puede ser anterior a la última evaluación.");
+    return false;
+  }
+  setFieldError(fields.nextExam, "");
+
+  return true;
+}
+
 export function openRecordDialog(record) {
   const content = document.createElement("div");
   content.innerHTML = `
@@ -96,13 +156,44 @@ export function openNewRecordDialog(onSave, isDuplicate) {
 
   openDialog(form, "Nuevo registro");
   form.querySelector("[name='name']").focus();
+  form.querySelectorAll("input, select").forEach((field) => {
+    ["input", "change"].forEach((eventName) => {
+      field.addEventListener(eventName, () => {
+        setFieldError(field, "");
+        if (field.name === "id") {
+          const id = String(field.value).trim();
+          if (isDuplicate(id)) {
+            setFieldError(field, "Este código ya existe en la lista de demostración.");
+          }
+        }
+        if (field.name === "nextExam") {
+          const lastExam = form.querySelector("[name='lastExam']");
+          if (field.value && lastExam.value) {
+            const nextDate = getDateValue(field.value);
+            const lastDate = getDateValue(lastExam.value);
+            if (nextDate && lastDate && nextDate < lastDate) {
+              setFieldError(field, "El próximo control no puede ser anterior a la última evaluación.");
+            }
+          }
+        }
+      });
+    });
+  });
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+    if (!validateRecordInput(form)) {
+      const firstInvalid = form.querySelector("[aria-invalid='true']");
+      firstInvalid?.focus();
+      return;
+    }
+
     const formData = new FormData(form);
     const id = String(formData.get("id")).trim();
     if (isDuplicate(id)) {
-      form.querySelector("[name='id']").setCustomValidity("Este código ya existe en la lista de demostración.");
-      form.querySelector("[name='id']").reportValidity();
+      const idField = form.querySelector("[name='id']");
+      setFieldError(idField, "Este código ya existe en la lista de demostración.");
+      idField.focus();
       return;
     }
 
@@ -116,7 +207,6 @@ export function openNewRecordDialog(onSave, isDuplicate) {
     });
     if (saved) closeDialog();
   });
-  form.querySelector("[name='id']").addEventListener("input", (event) => event.currentTarget.setCustomValidity(""));
 }
 
 export function bindDialogDismissal() {

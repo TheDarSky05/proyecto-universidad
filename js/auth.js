@@ -20,6 +20,39 @@ function normalizeCedula(value) {
   return `${documentType}-${number}`;
 }
 
+function setFieldError(field, message) {
+  if (!field) return;
+  const hasError = Boolean(message);
+  field.setAttribute("aria-invalid", String(hasError));
+  field.setCustomValidity(hasError ? message : "");
+  field.dataset.validationMessage = hasError ? message : "";
+}
+
+function clearFieldError(field) {
+  setFieldError(field, "");
+}
+
+function validateIdentityInput(value) {
+  const normalized = normalizeCedula(value);
+  if (!normalized) {
+    return "Ingresa una cédula venezolana válida: V o E seguida de 5 a 10 dígitos.";
+  }
+  return "";
+}
+
+function validatePasswordStrength(value) {
+  if (!value || value.length < 12) {
+    return "La contraseña debe tener al menos 12 caracteres.";
+  }
+  if (/\s/.test(value)) {
+    return "La contraseña no debe incluir espacios.";
+  }
+  if (!/[A-Za-z]/.test(value) || !/\d/.test(value)) {
+    return "La contraseña debe incluir letras y números.";
+  }
+  return "";
+}
+
 async function deriveVerifier(password, salt) {
   if (!window.crypto?.subtle) {
     throw new Error("La autenticación de demostración requiere un navegador compatible y un origen seguro (HTTPS o localhost).");
@@ -157,30 +190,57 @@ document.querySelectorAll("[data-password-toggle]").forEach((button) => {
   });
 });
 
+loginForm.addEventListener("input", (event) => {
+  const input = event.target;
+  if (input.name === "identity") {
+    const message = validateIdentityInput(input.value);
+    setFieldError(input, message);
+    if (!message) clearFeedback(loginForm);
+  }
+  if (input.name === "password" && input.value.trim() === "") {
+    setFieldError(input, "La contraseña es obligatoria.");
+  } else if (input.name === "password") {
+    clearFieldError(input);
+  }
+});
+
 loginForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   clearFeedback(loginForm);
-  const cedula = normalizeCedula(loginForm.elements.identity.value);
-  if (!cedula) {
-    showFeedback(loginForm, "Ingresa una cédula venezolana válida: V o E seguida de 5 a 10 dígitos.");
-    loginForm.elements.password.value = "";
-    loginForm.elements.identity.focus();
+  const identityField = loginForm.elements.identity;
+  const passwordField = loginForm.elements.password;
+  const cedula = normalizeCedula(identityField.value);
+  const identityError = validateIdentityInput(identityField.value);
+  if (identityError) {
+    setFieldError(identityField, identityError);
+    showFeedback(loginForm, identityError);
+    passwordField.value = "";
+    identityField.focus();
     return;
   }
+  if (!passwordField.value.trim()) {
+    setFieldError(passwordField, "La contraseña es obligatoria.");
+    showFeedback(loginForm, "La contraseña es obligatoria.");
+    passwordField.focus();
+    return;
+  }
+  clearFieldError(identityField);
+  clearFieldError(passwordField);
+
   const account = accounts.get(cedula);
   if (!account) {
     showFeedback(loginForm, invalidCredentialsMessage);
-    loginForm.elements.password.value = "";
+    passwordField.value = "";
     return;
   }
 
-  const password = loginForm.elements.password.value;
+  const password = passwordField.value;
   const submitButton = loginForm.querySelector("[type='submit']");
   submitButton.disabled = true;
   submitButton.textContent = "Verificando…";
   loginForm.setAttribute("aria-busy", "true");
-  loginForm.elements.identity.disabled = true;
-  loginForm.elements.password.disabled = true;
+  identityField.disabled = true;
+  passwordField.disabled = true;
   try {
     const attempt = await deriveVerifier(password, account.salt);
     if (!equalBytes(attempt, account.verifier)) {
@@ -191,40 +251,79 @@ loginForm.addEventListener("submit", async (event) => {
   } catch (error) {
     showFeedback(loginForm, error.message);
   } finally {
-    loginForm.elements.password.value = "";
-    loginForm.elements.identity.disabled = false;
-    loginForm.elements.password.disabled = false;
+    passwordField.value = "";
+    identityField.disabled = false;
+    passwordField.disabled = false;
     loginForm.removeAttribute("aria-busy");
     submitButton.disabled = false;
     submitButton.textContent = "Entrar";
   }
 });
 
+registerForm.addEventListener("input", (event) => {
+  const input = event.target;
+  if (input.name === "identity") {
+    const message = validateIdentityInput(input.value);
+    setFieldError(input, message);
+    if (!message) clearFeedback(registerForm);
+  }
+  if (input.name === "password") {
+    const message = validatePasswordStrength(input.value);
+    setFieldError(input, message);
+    if (!message && registerForm.elements.confirm.value) {
+      const confirmMessage = input.value !== registerForm.elements.confirm.value ? "Las contraseñas no coinciden." : "";
+      setFieldError(registerForm.elements.confirm, confirmMessage);
+    }
+  }
+  if (input.name === "confirm") {
+    const message = input.value && input.value !== registerForm.elements.password.value ? "Las contraseñas no coinciden." : "";
+    setFieldError(input, message);
+  }
+});
+
 registerForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   clearFeedback(registerForm);
-  const cedula = normalizeCedula(registerForm.elements.identity.value);
-  if (!cedula) {
-    showFeedback(registerForm, "Ingresa una cédula venezolana válida: V o E seguida de 5 a 10 dígitos.");
-    registerForm.elements.identity.focus();
+  const identityField = registerForm.elements.identity;
+  const passwordField = registerForm.elements.password;
+  const confirmField = registerForm.elements.confirm;
+  const cedula = normalizeCedula(identityField.value);
+  const identityError = validateIdentityInput(identityField.value);
+  if (identityError) {
+    setFieldError(identityField, identityError);
+    showFeedback(registerForm, identityError);
+    identityField.focus();
     return;
   }
   if (accounts.has(cedula)) {
+    setFieldError(identityField, "Ya existe una cuenta de demostración con esa cédula.");
     showFeedback(registerForm, "Ya existe una cuenta de demostración con esa cédula. Inicia sesión.");
     return;
   }
 
-  const password = registerForm.elements.password.value;
-  if (password.length < 12) {
-    showFeedback(registerForm, "La contraseña debe tener al menos 12 caracteres.");
-    registerForm.elements.password.focus();
+  const passwordError = validatePasswordStrength(passwordField.value);
+  if (passwordError) {
+    setFieldError(passwordField, passwordError);
+    showFeedback(registerForm, passwordError);
+    passwordField.focus();
     return;
   }
-  if (password !== registerForm.elements.confirm.value) {
+  if (!confirmField.value) {
+    setFieldError(confirmField, "Debes confirmar la contraseña.");
+    showFeedback(registerForm, "Debes confirmar la contraseña.");
+    confirmField.focus();
+    return;
+  }
+  if (passwordField.value !== confirmField.value) {
+    setFieldError(confirmField, "Las contraseñas no coinciden.");
     showFeedback(registerForm, "Las contraseñas no coinciden.");
-    registerForm.elements.confirm.focus();
+    confirmField.focus();
     return;
   }
+
+  clearFieldError(identityField);
+  clearFieldError(passwordField);
+  clearFieldError(confirmField);
 
   const submitButton = registerForm.querySelector("[type='submit']");
   submitButton.disabled = true;
@@ -234,7 +333,7 @@ registerForm.addEventListener("submit", async (event) => {
       throw new Error("La autenticación de demostración requiere un navegador compatible y un origen seguro (HTTPS o localhost).");
     }
     const salt = window.crypto.getRandomValues(new Uint8Array(16));
-    const verifier = await deriveVerifier(password, salt);
+    const verifier = await deriveVerifier(passwordField.value, salt);
     accounts.set(cedula, { salt, verifier });
     registerForm.reset();
     resetPasswordVisibility(registerForm);

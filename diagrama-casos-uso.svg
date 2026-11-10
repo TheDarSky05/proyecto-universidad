@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1440" viewBox="0 0 1600 1440" role="img" aria-labelledby="title description">
+  <title id="title">Casos de uso de Guardia para médicos administradores y bomberos</title>
+  <desc id="description">Diagrama UML con dos roles: los médicos administran y consultan todas las fichas; cada bombero solo puede revisar su propia ficha médica.</desc>
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; }
+      .eyebrow { font-size: 15px; font-weight: 700; letter-spacing: 2.4px; fill: #b42335; }
+      .title { font-size: 42px; font-weight: 750; fill: #14202d; }
+      .subtitle { font-size: 19px; font-weight: 450; fill: #5b6878; }
+      .system { fill: #fbfcfe; stroke: #b9c4d2; stroke-width: 2; }
+      .system-title { font-size: 18px; font-weight: 700; letter-spacing: 1.2px; fill: #28374a; }
+      .role { font-size: 14px; font-weight: 750; letter-spacing: 1.5px; fill: #738094; }
+      .usecase { fill: #fff; stroke: #34465c; stroke-width: 2.2; }
+      .included { fill: #edf4ff; stroke: #5176ad; stroke-width: 2; }
+      .extended { fill: #fff4f3; stroke: #bd5b59; stroke-width: 2; }
+      .case-label { font-size: 17px; font-weight: 650; fill: #1d2b3a; }
+      .case-small { font-size: 15px; font-weight: 550; fill: #34465c; }
+      .actor-line { stroke: #8996a6; stroke-width: 2; fill: none; }
+      .actor-figure { stroke: #26384b; stroke-width: 3; fill: #f2f5f9; }
+      .actor-label { font-size: 16px; font-weight: 700; fill: #26384b; }
+      .relation { stroke: #34465c; stroke-width: 1.8; stroke-dasharray: 7 6; fill: none; marker-end: url(#arrow); }
+      .relation-label { font-size: 13px; font-weight: 750; fill: #34465c; }
+      .label-bg { fill: #fbfcfe; }
+      .card { fill: #fff; stroke: #e0e5ec; stroke-width: 1.5; }
+      .card-title { font-size: 19px; font-weight: 750; fill: #1d2b3a; }
+      .card-text { font-size: 16px; font-weight: 450; fill: #536174; }
+      .legend-text { font-size: 14px; font-weight: 600; fill: #536174; }
+      .footer { font-size: 14px; font-weight: 550; fill: #7b8795; }
+      .bullet { fill: #b42335; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 10 4 0 8" fill="none" stroke="#34465c" stroke-width="1.5" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1440" fill="#f5f7fa"/>
+  <rect width="1600" height="12" fill="#b42335"/>
+  <text x="78" y="58" class="eyebrow">GUARDIA · SALUD OCUPACIONAL</text>
+  <text x="78" y="112" class="title">Casos de uso por tipo de usuario</text>
+  <text x="78" y="148" class="subtitle">Médicos administradores: acceso completo · Bomberos: solo consulta de su propia ficha</text>
+
+  <g transform="translate(900 195)">
+    <path d="M0 0h46" class="relation"/>
+    <rect x="3" y="-13" width="71" height="22" rx="5" class="label-bg"/>
+    <text x="38" y="3" text-anchor="middle" class="relation-label">«include»</text>
+    <text x="80" y="4" class="legend-text">obligatorio</text>
+    <path d="M190 0h46" class="relation"/>
+    <rect x="193" y="-13" width="67" height="22" rx="5" class="label-bg"/>
+    <text x="226" y="3" text-anchor="middle" class="relation-label">«extend»</text>
+    <text x="269" y="4" class="legend-text">opcional / condicional</text>
+  </g>
+
+  <rect x="255" y="235" width="1290" height="895" rx="22" class="system"/>
+  <text x="900" y="271" text-anchor="middle" class="system-title">SISTEMA DE FICHAS CLÍNICAS · LÍMITE DEL SISTEMA</text>
+  <path d="M285 290H1515" stroke="#e1e6ed" stroke-width="1.5"/>
+  <text x="900" y="320" text-anchor="middle" class="role">ACCESO COMPARTIDO</text>
+
+  <!-- Associations use plain solid lines; role-specific permissions are separated by use case. -->
+  <g class="actor-line">
+    <path d="M180 474 475 396"/>
+    <path d="M181 515 475 586"/>
+    <path d="M178 910H240V400H420"/>
+    <path d="M185 915 495 1030"/>
+  </g>
+
+  <g aria-label="Actor: médico administrador">
+    <circle cx="145" cy="450" r="20" class="actor-figure"/>
+    <path d="M145 470V530M112 492H178M145 530 120 566M145 530 170 566" class="actor-figure" stroke-linecap="round"/>
+    <text x="145" y="595" text-anchor="middle" class="actor-label">Médico</text>
+    <text x="145" y="616" text-anchor="middle" class="actor-label">administrador</text>
+    <text x="145" y="639" text-anchor="middle" class="legend-text">acceso completo</text>
+  </g>
+
+  <g aria-label="Actor: bombero">
+    <circle cx="145" cy="868" r="20" class="actor-figure"/>
+    <path d="M145 888V948M112 910H178M145 948 120 984M145 948 170 984" class="actor-figure" stroke-linecap="round"/>
+    <text x="145" y="1014" text-anchor="middle" class="actor-label">Bombero</text>
+    <text x="145" y="1037" text-anchor="middle" class="legend-text">solo ficha propia</text>
+  </g>
+
+  <g>
+    <path d="M585 400H735" class="relation"/>
+    <rect x="620" y="369" width="77" height="22" rx="5" class="label-bg"/>
+    <text x="658" y="385" text-anchor="middle" class="relation-label">«include»</text>
+
+    <path d="M600 740V645" class="relation"/>
+    <text x="614" y="704" class="relation-label">«extend»</text>
+
+    <path d="M980 657V690H1230V740" class="relation"/>
+    <rect x="1086" y="676" width="77" height="22" rx="5" class="label-bg"/>
+    <text x="1124" y="692" text-anchor="middle" class="relation-label">«include»</text>
+  </g>
+
+  <g>
+    <ellipse cx="530" cy="400" rx="110" ry="48" class="usecase"/>
+    <text x="530" y="406" text-anchor="middle" class="case-label">Iniciar sesión</text>
+
+    <ellipse cx="855" cy="400" rx="120" ry="48" class="included"/>
+    <text x="855" y="394" text-anchor="middle" class="case-small">
+      <tspan x="855">Validar identidad</tspan><tspan x="855" dy="20">y credenciales</tspan>
+    </text>
+
+    <ellipse cx="1285" cy="400" rx="120" ry="48" class="usecase"/>
+    <text x="1285" y="394" text-anchor="middle" class="case-small">
+      <tspan x="1285">Cerrar sesión</tspan><tspan x="1285" dy="20">de forma segura</tspan>
+    </text>
+  </g>
+
+  <path d="M285 475H1515" stroke="#e1e6ed" stroke-width="1.5"/>
+  <text x="900" y="510" text-anchor="middle" class="role">SOLO MÉDICO ADMINISTRADOR · ACCESO A TODAS LAS OPCIONES</text>
+
+  <g>
+    <ellipse cx="530" cy="595" rx="120" ry="62" class="usecase"/>
+    <text x="530" y="583" text-anchor="middle" class="case-label">
+      <tspan x="530">Consultar todas</tspan><tspan x="530" dy="22">las fichas</tspan>
+    </text>
+
+    <ellipse cx="850" cy="595" rx="130" ry="62" class="extended"/>
+    <text x="850" y="583" text-anchor="middle" class="case-small">
+      <tspan x="850">Registrar nueva</tspan><tspan x="850" dy="20">ficha de personal</tspan>
+    </text>
+
+    <ellipse cx="1170" cy="595" rx="125" ry="62" class="extended"/>
+    <text x="1170" y="583" text-anchor="middle" class="case-small">
+      <tspan x="1170">Revisar resumen y</tspan><tspan x="1170" dy="20">controles próximos</tspan>
+    </text>
+
+    <ellipse cx="1435" cy="595" rx="96" ry="62" class="usecase"/>
+    <text x="1435" y="583" text-anchor="middle" class="case-small">
+      <tspan x="1435">Administrar</tspan><tspan x="1435" dy="20">el sistema</tspan>
+    </text>
+  </g>
+
+  <g>
+    <ellipse cx="600" cy="795" rx="170" ry="55" class="extended"/>
+    <text x="600" y="783" text-anchor="middle" class="case-small">
+      <tspan x="600">Buscar por nombre, código o estación</tspan><tspan x="600" dy="20">filtrar por aptitud y abrir el detalle</tspan>
+    </text>
+
+    <ellipse cx="1230" cy="795" rx="140" ry="55" class="included"/>
+    <text x="1230" y="783" text-anchor="middle" class="case-small">
+      <tspan x="1230">Validar datos</tspan><tspan x="1230" dy="20">y código único</tspan>
+    </text>
+  </g>
+
+  <path d="M285 890H1515" stroke="#e1e6ed" stroke-width="1.5"/>
+  <text x="900" y="925" text-anchor="middle" class="role">SOLO BOMBERO · CONSULTA PERSONAL, SIN ACCESO A OTRAS FICHAS</text>
+
+  <g>
+    <ellipse cx="660" cy="1030" rx="165" ry="57" class="usecase"/>
+    <text x="660" y="1018" text-anchor="middle" class="case-label">
+      <tspan x="660">Consultar únicamente</tspan><tspan x="660" dy="22">su propia ficha médica</tspan>
+    </text>
+
+    <ellipse cx="1080" cy="1030" rx="155" ry="57" class="included"/>
+    <text x="1080" y="1018" text-anchor="middle" class="case-small">
+      <tspan x="1080">Revisar aptitud y fechas</tspan><tspan x="1080" dy="20">de sus controles</tspan>
+    </text>
+    <path d="M825 1030H925" class="relation"/>
+    <rect x="839" y="997" width="77" height="22" rx="5" class="label-bg"/>
+    <text x="878" y="1013" text-anchor="middle" class="relation-label">«include»</text>
+  </g>
+
+  <g transform="translate(78 1170)">
+    <rect width="700" height="173" rx="16" class="card"/>
+    <text x="28" y="37" class="card-title">Reglas de acceso</text>
+    <circle cx="31" cy="69" r="4" class="bullet"/>
+    <text x="47" y="75" class="card-text">El médico puede consultar todas las fichas y gestionar el registro.</text>
+    <circle cx="31" cy="103" r="4" class="bullet"/>
+    <text x="47" y="109" class="card-text">Cada bombero solo puede consultar su propia información.</text>
+    <circle cx="31" cy="137" r="4" class="bullet"/>
+    <text x="47" y="143" class="card-text">Buscar, filtrar y abrir detalles amplían la consulta del médico.</text>
+  </g>
+
+  <g transform="translate(802 1170)">
+    <rect width="720" height="173" rx="16" fill="#fff9ed" stroke="#ead7ad" stroke-width="1.5"/>
+    <text x="28" y="37" class="card-title">Alcance del prototipo</text>
+    <text x="28" y="75" class="card-text">Los perfiles y permisos separados describen el sistema solicitado;</text>
+    <text x="28" y="101" class="card-text">el prototipo actual aún no aplica la restricción por tipo de usuario.</text>
+    <text x="28" y="131" class="card-text">Informes y Configuración aún no están disponibles.</text>
+    <text x="28" y="157" class="card-text">Los datos son de demostración: no ingresar información real.</text>
+  </g>
+
+  <text x="80" y="1405" class="footer">«include»: parte obligatoria del caso base · «extend»: comportamiento adicional u opcional</text>
+</svg>
