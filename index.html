@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Prototipo de registro clínico ocupacional para personal de bomberos.">
+  <title>Fichas clínicas · Guardia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="auth-screen" id="auth-screen">
+    <section class="auth-story" aria-labelledby="auth-story-title">
+      <a class="brand auth-brand" href="#" aria-label="Guardia, inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="m12 2.5 8.1 4.6v9.8L12 21.5l-8.1-4.6V7.1L12 2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="m4.2 7.4 7.8 4.5 7.8-4.5M12 11.9v9.3M9.4 15.3h5.2M12 12.7v5.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">Guardia<span class="brand-subtitle">Salud ocupacional</span></span>
+      </a>
+      <div class="auth-story-copy">
+        <h1 id="auth-story-title">Salud para bomberos</h1>
+        <p>Accede al registro de aptitud y seguimiento del personal.</p>
+      </div>
+      <svg class="auth-facets" viewBox="0 0 640 520" fill="none" aria-hidden="true">
+        <path d="M325 0 640 116 507 275 326 207 325 0Z" fill="#121212"/>
+        <path d="m0 64 193 142 132 1L0 345V64Z" fill="#101010"/>
+        <path d="m193 206 132 1 182 68-267 112-47-181Z" fill="#171717"/>
+        <path d="m240 387 267-112 133 119-263 126-137-133Z" fill="#101010"/>
+        <path d="M325 0 193 206m132-206 1 207m-1-207 315 116M0 64l193 142m-193 139 193-139m0 0 132 1m-132-1 47 181m85-180 182 68m-182-68-85 180m85-180 1 313m-1-313 181 68m-181-68 181 68m0 0 133-159m-133 159 133 119m-133-119-267 112m267-112-47 245m47-245 133 119m-396 14-137-133m137 133 137 133m-137-133 400-14" stroke="#7f202b" stroke-opacity=".48" stroke-width="1.2"/>
+        <path d="m193 206 132 1m0-207 250 92m-335 295 267-112" stroke="#ef4054" stroke-opacity=".76" stroke-width="2"/>
+      </svg>
+      <p class="auth-story-note">Prototipo de demostración. No ingreses datos personales ni clínicos reales.</p>
+    </section>
+
+    <section class="auth-panel" aria-labelledby="auth-title">
+      <div class="auth-panel-inner">
+        <div class="auth-mobile-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="m12 2.5 8.1 4.6v9.8L12 21.5l-8.1-4.6V7.1L12 2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              <path d="m4.2 7.4 7.8 4.5 7.8-4.5M12 11.9v9.3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand-name">Guardia<span class="brand-subtitle">Salud ocupacional</span></span>
+        </div>
+        <h2 id="auth-title">Inicia sesión</h2>
+        <p class="auth-description" id="auth-description">Ingresa con tu cédula de identidad y contraseña.</p>
+
+        <div class="auth-tabs" role="tablist" aria-label="Acceso a Guardia">
+          <button class="auth-tab" id="login-tab" type="button" role="tab" aria-selected="true" aria-controls="login-form" tabindex="0">Iniciar sesión</button>
+          <button class="auth-tab" id="register-tab" type="button" role="tab" aria-selected="false" aria-controls="register-form" tabindex="-1">Crear cuenta</button>
+        </div>
+
+        <form class="auth-form" id="login-form" role="tabpanel" aria-labelledby="login-tab" novalidate>
+          <div class="auth-field">
+            <label for="login-identity">Cédula de identidad venezolana</label>
+            <input id="login-identity" name="identity" type="text" inputmode="text" autocomplete="username" placeholder="V-12345678 o E-12345678" required aria-describedby="login-identity-help">
+            <span class="auth-field-help" id="login-identity-help">Usa V para venezolano o E para extranjero. El prefijo es opcional.</span>
+          </div>
+          <div class="auth-field">
+            <label for="login-password">Contraseña</label>
+            <div class="password-control">
+              <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+              <button class="password-toggle" type="button" aria-label="Mostrar contraseña" aria-pressed="false" data-password-toggle="login-password">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.8 10s2.6-4.3 7.2-4.3 7.2 4.3 7.2 4.3-2.6 4.3-7.2 4.3S2.8 10 2.8 10Z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="10" r="1.8" stroke="currentColor" stroke-width="1.4"/></svg>
+              </button>
+            </div>
+          </div>
+          <p class="auth-feedback" id="login-feedback" role="alert" hidden></p>
+          <button class="button button-primary auth-submit" type="submit">Entrar</button>
+          <p class="auth-switch">¿Aún no tienes cuenta? <button type="button" data-show-register>Crear cuenta</button></p>
+        </form>
+
+        <form class="auth-form" id="register-form" role="tabpanel" aria-labelledby="register-tab" hidden novalidate>
+          <div class="auth-field">
+            <label for="register-identity">Cédula de identidad venezolana</label>
+            <input id="register-identity" name="identity" type="text" inputmode="text" autocomplete="username" placeholder="V-12345678 o E-12345678" required aria-describedby="register-identity-help">
+            <span class="auth-field-help" id="register-identity-help">Usa V para venezolano o E para extranjero. El prefijo es opcional.</span>
+          </div>
+          <div class="auth-field">
+            <label for="register-password">Crear contraseña</label>
+            <div class="password-control">
+              <input id="register-password" name="password" type="password" autocomplete="new-password" minlength="12" required aria-describedby="password-requirements">
+              <button class="password-toggle" type="button" aria-label="Mostrar contraseña" aria-pressed="false" data-password-toggle="register-password">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.8 10s2.6-4.3 7.2-4.3 7.2 4.3 7.2 4.3-2.6 4.3-7.2 4.3S2.8 10 2.8 10Z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="10" r="1.8" stroke="currentColor" stroke-width="1.4"/></svg>
+              </button>
+            </div>
+            <span class="auth-field-help" id="password-requirements">Usa al menos 12 caracteres.</span>
+          </div>
+          <div class="auth-field">
+            <label for="register-confirm">Confirmar contraseña</label>
+            <div class="password-control">
+              <input id="register-confirm" name="confirm" type="password" autocomplete="new-password" minlength="12" required>
+              <button class="password-toggle" type="button" aria-label="Mostrar contraseña" aria-pressed="false" data-password-toggle="register-confirm">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.8 10s2.6-4.3 7.2-4.3 7.2 4.3 7.2 4.3-2.6 4.3-7.2 4.3S2.8 10 2.8 10Z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="10" r="1.8" stroke="currentColor" stroke-width="1.4"/></svg>
+              </button>
+            </div>
+          </div>
+          <p class="auth-feedback" id="register-feedback" role="alert" hidden></p>
+          <button class="button button-primary auth-submit" type="submit">Crear cuenta</button>
+          <p class="auth-switch">¿Ya tienes cuenta? <button type="button" data-show-login>Inicia sesión</button></p>
+        </form>
+
+        <p class="auth-security-note">Las cuentas de prueba existen solo en la memoria de esta pestaña y desaparecen al recargarla. No ingreses cédulas, contraseñas ni datos clínicos reales. Para uso real se requiere autenticación segura en un servidor.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="app-shell" id="app-shell" hidden inert>
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="#" aria-label="Guardia, inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="m12 2.5 8.1 4.6v9.8L12 21.5l-8.1-4.6V7.1L12 2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="m4.2 7.4 7.8 4.5 7.8-4.5M12 11.9v9.3M9.4 15.3h5.2M12 12.7v5.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">Guardia<span class="brand-subtitle">Salud ocupacional</span></span>
+      </a>
+
+      <button class="workspace-switcher" type="button" data-coming-soon="Selector de cuerpo de bomberos">
+        <span><strong>Bomberos · Central</strong><small>Unidad de salud</small></span>
+        <svg class="chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m6 8 4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <nav>
+        <div class="nav-group">
+          <p class="nav-label">Personal</p>
+          <ul class="nav-list">
+            <li><button class="nav-link" type="button" data-coming-soon="Resumen"><svg class="nav-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="3.2" y="3.2" width="5.6" height="5.6" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="11.2" y="3.2" width="5.6" height="5.6" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="3.2" y="11.2" width="5.6" height="5.6" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="11.2" y="11.2" width="5.6" height="5.6" rx="1" stroke="currentColor" stroke-width="1.4"/></svg>Resumen</button></li>
+            <li><button class="nav-link" id="nav-records" type="button" aria-current="page"><svg class="nav-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5.2 3.2h6.4l3.2 3.2v10.4H5.2V3.2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M11.4 3.5v3.1h3.1M7.8 10h4.5M7.8 13h4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Fichas clínicas</button></li>
+            <li><button class="nav-link" id="nav-templates" type="button"><svg class="nav-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4.2 3.5h11.6v13H4.2zM7 7h6M7 10h6M7 13h3.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 2.5v2M12.5 2.5v2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Plantillas médicas</button></li>
+            <li><button class="nav-link" type="button" data-coming-soon="Evaluaciones"><svg class="nav-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="3.2" y="4.3" width="13.6" height="12.2" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 2.8v3M13.5 2.8v3M3.5 8h13M7 11h2.5M7 14h5.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Evaluaciones</button></li>
+            <li><button class="nav-link" type="button" data-coming-soon="Personal de guardia"><svg class="nav-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="7.4" cy="6.2" r="2.6" stroke="currentColor" stroke-width="1.4"/><path d="M2.8 16.3c.4-2.4 2.2-3.8 4.6-3.8s4.2 1.4 4.6 3.8M13 5.2h4.2M15.1 3.1v4.2M13.2 12.2a3.7 3.7 0 0 1 3.9 3.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Personal de guardia</button></li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <p class="nav-label">Administración</p>
+          <ul class="nav-list">
+            <li><button class="nav-link" type="button" data-coming-soon="Informes"><svg class="nav-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.2 16.5h13.6M5.2 14V9.7M10 14V5.5M14.8 14V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Informes</button></li>
+            <li><button class="nav-link" type="button" data-coming-soon="Configuración"><svg class="nav-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.4"/><path d="m16.1 11.6 1.1.9-1.2 2.1-1.4-.5a6.1 6.1 0 0 1-1.5.9l-.2 1.5h-2.4l-.3-1.5a6.1 6.1 0 0 1-1.5-.9l-1.4.5-1.2-2.1 1.1-.9a5.8 5.8 0 0 1 0-1.8l-1.1-.9 1.2-2.1 1.4.5a6.1 6.1 0 0 1 1.5-.9l.3-1.5h2.4l.2 1.5a6.1 6.1 0 0 1 1.5.9l1.4-.5 1.2 2.1-1.1.9a5.8 5.8 0 0 1 0 1.8Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>Configuración</button></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="profile-button" type="button" data-coming-soon="Perfil de sesión">
+          <span class="profile-initials" aria-hidden="true">MS</span>
+          <span class="profile-copy"><strong>María Salazar</strong><small>Personal médico</small></span>
+        </button>
+        <button class="logout-button" id="logout" type="button">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M8 3.5H4.5v13H8M11.5 6l4 4-4 4M7 10h8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Cerrar sesión
+        </button>
+      </div>
+      <button class="icon-button sidebar-close" id="sidebar-close" type="button" aria-label="Cerrar menú" hidden>
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </aside>
+
+    <button class="sidebar-backdrop" id="sidebar-backdrop" type="button" aria-label="Cerrar menú" hidden></button>
+
+    <main class="main">
+      <div class="mobile-bar">
+        <button class="icon-button mobile-menu" id="menu-open" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 5.5h13M3.5 10h13M3.5 14.5h13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <span class="mobile-title" id="mobile-title">Fichas clínicas</span>
+        <span style="width:44px" aria-hidden="true"></span>
+      </div>
+      <div class="main-inner">
+        <div id="records-screen">
+        <header class="page-heading">
+          <div>
+            <h1>Fichas clínicas</h1>
+            <p class="page-description">Registro ocupacional del personal de Bomberos · Central.</p>
+          </div>
+          <button class="button button-primary" id="new-record" type="button">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            Nuevo registro
+          </button>
+        </header>
+
+        <div class="prototype-notice" role="note">
+          <span class="notice-mark" aria-hidden="true"></span>
+          <span><strong>Prototipo de demostración.</strong> No ingreses datos personales ni clínicos reales. Los registros de ejemplo son ficticios y los cambios se conservan solo mientras esta página está abierta.</span>
+        </div>
+
+        <section class="summary-band" aria-label="Resumen del registro">
+          <div class="summary-item">
+            <span class="summary-label">Fichas registradas</span>
+            <strong class="summary-value" id="total-count">0</strong>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Controles próximos</span>
+            <strong class="summary-value" id="upcoming-count">0 <span class="summary-unit">en 7 días</span></strong>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Evaluaciones pendientes</span>
+            <strong class="summary-value" id="pending-count">0</strong>
+          </div>
+        </section>
+
+        <section class="records-section" aria-labelledby="records-heading">
+          <div class="section-heading">
+            <div>
+              <h2 id="records-heading">Personal registrado</h2>
+              <p>Consulta de aptitud y fechas de seguimiento.</p>
+            </div>
+          </div>
+
+          <div class="records-panel">
+            <div class="toolbar">
+              <div class="toolbar-left">
+                <label class="search-wrap">
+                  <span class="sr-only">Buscar por nombre, código o estación</span>
+                  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.7" cy="8.7" r="5.7" stroke="currentColor" stroke-width="1.5"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input class="search-input" id="search" type="search" autocomplete="off" placeholder="Buscar por nombre o código">
+                </label>
+              </div>
+              <div class="toolbar-right">
+                <label class="sr-only" for="status-filter">Filtrar por estado</label>
+                <select class="filter-select" id="status-filter">
+                  <option value="all">Todos los estados</option>
+                  <option value="Apto">Apto</option>
+                  <option value="Control próximo">Control próximo</option>
+                  <option value="Evaluación pendiente">Evaluación pendiente</option>
+                  <option value="Restricción temporal">Restricción temporal</option>
+                </select>
+                <button class="button button-secondary filter-toggle" id="filter-toggle" type="button" aria-expanded="false" aria-controls="status-filter">
+                  Filtrar
+                  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 5.5h13M5.5 10h9M8 14.5h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="table-scroll">
+              <table>
+                <caption class="sr-only">Fichas clínicas de demostración</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Personal</th>
+                    <th scope="col">Estación</th>
+                    <th scope="col">Última evaluación</th>
+                    <th scope="col">Próximo control</th>
+                    <th scope="col">Aptitud</th>
+                    <th scope="col"><span class="sr-only">Acciones</span></th>
+                  </tr>
+                </thead>
+                <tbody id="records-body"></tbody>
+              </table>
+            </div>
+            <div class="table-footer">
+              <span id="results-count" aria-live="polite">0 registros</span>
+              <span class="footer-page">Datos de demostración</span>
+            </div>
+          </div>
+        </section>
+        </div>
+        <section id="templates-screen" aria-labelledby="templates-heading" hidden></section>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/medical-templates.js"></script>
+</body>
+</html>
